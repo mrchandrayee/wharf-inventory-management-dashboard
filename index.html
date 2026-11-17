@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f6ef"><title>Wharf — Inventory Management</title><link rel="stylesheet" href="styles.css"></head>
+<body data-theme="light" data-accent="mint">
+<div class="app">
+<aside class="sidebar">
+ <div class="brand"><span class="brand-icon">♟</span><span><b>Wharf</b><small>Inventory workspace</small></span></div>
+ <div class="workspace"><span class="workspace-dot"></span> North America <span class="chev">⌄</span></div>
+ <div class="nav-label">WORKSPACE</div>
+ <nav>
+  <button class="nav-item active" data-page="Dashboard"><span>⌂</span>Dashboard</button>
+  <button class="nav-item" data-page="Orders"><span>▤</span>Orders <i>14</i></button>
+  <button class="nav-item" data-page="Products"><span>▦</span>Products</button>
+  <button class="nav-item" data-page="Inventory"><span>▥</span>Inventory</button>
+  <button class="nav-item" data-page="Customers"><span>♙</span>Customers</button>
+  <button class="nav-item" data-page="Analytics"><span>◷</span>Analytics</button>
+  <div class="nav-label second">MANAGE</div>
+  <button class="nav-item" data-page="Settings"><span>⚙</span>Settings</button>
+ </nav>
+ <div class="side-bottom"><div class="help-card"><span>✳</span><b>Need a hand?</b><small>Visit our help centre</small><button id="helpBtn">Get support ↗</button></div><div class="profile"><span class="avatar">AM</span><span><b>Alex Morgan</b><small>Store administrator</small></span><button>•••</button></div></div>
+</aside>
+<main class="main">
+ <header class="topbar"><div class="crumb">Workspace <span>/</span> <b id="crumbPage">Dashboard</b></div><div class="top-actions"><label class="search">⌕ <input id="globalSearch" placeholder="Search anything..."><kbd>⌘ K</kbd></label><button class="icon-btn" id="notify">♧<i></i></button><button class="avatar small-avatar">AM</button></div></header>
+ <section id="view" class="view"></section>
+</main></div>
+<div class="overlay hidden" id="overlay"><section class="drawer" id="drawer"><button class="close" id="closeDrawer">×</button><div id="drawerContent"></div></section></div>
+<div class="toast" id="toast"></div><script src="app.js"></script></body></html>
